@@ -43,7 +43,7 @@ public class LogUtils {
      */
     private static String getDefaultTag() {
         StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
-        byte index = 5;
+        byte index = 7;
         String className = stackTrace[index].getFileName();
         String methodName = stackTrace[index].getMethodName();
         int lineNumber = stackTrace[index].getLineNumber();
